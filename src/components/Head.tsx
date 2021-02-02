@@ -3,15 +3,14 @@
 // title 
 // isActive
 
-
 type Props = {
   title: string
-  isActive: boolean
+  isActive?: boolean
+
 }
 
 
-
-export const Head = ({title, isActive}: Props) => {
+export const Head = ({title, isActive = true}: Props) => {
   return (
     <div>
       <h1>{title}</h1>
